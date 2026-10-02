@@ -1,0 +1,100 @@
+/* ============================
+   Paleta de colores elegantes
+   ============================ */
+:root {
+  --color-beige: #f5f5dc;
+  --color-cafe: #4b3832;
+  --color-negro: #000000;
+  --color-gris: #eae6e1;
+  --color-acento: #b9b2a7; /* azul suave para tarjetas */
+}
+
+/* ============================
+   Estilos generales
+   ============================ */
+body {
+  background-color: var(--color-gris);
+  font-family: 'Poppins', sans-serif; /* fuente moderna */
+  color: var(--color-negro);
+}
+
+/* Navbar más gruesa */
+.navbar {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Texto beige */
+.text-beige {
+  color: var(--color-beige);
+  font-weight: bold;
+}
+
+/* Frase sobre la imagen */
+.frase-sobre-imagen {
+  font-style: italic;
+  text-align: center;
+  font-family: 'Merriweather', serif; /* fuente elegante */
+  font-size: 1.2rem;
+  color: var(--color-beige);
+  margin-bottom: 15px;
+}
+
+/* Imagen circular con efecto */
+.foto-perfil {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--color-beige);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+.foto-perfil:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  filter: sepia(20%);
+}
+
+/* Cards */
+.card {
+  border: 5px solid var(--color-negro);
+  background-color: var(--color-negro);
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+/* ----Sección Proyectos---- */
+.proyectos-section {
+  background-color: var(--color-gris);
+  padding: 60px 0;
+}
+
+.proyecto-card {
+  background-color: var(--color-gris);
+  border-radius: 1px;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-negro);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.proyecto-card h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.proyecto-card p {
+  font-size: 0.95rem;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
